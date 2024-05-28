@@ -59,13 +59,12 @@ public class Order {
         items.remove(item);
     }
 
-    //Falta escrever a lógica para calcular o total do pedido
-    //public double total(){
-
-    //    for (OrderItem c : items){
-
-    //    }
-
-    //    return double;
-    //}
+    //Testar essa brincadeira
+    public double total(){
+        double average = 0;
+        for (OrderItem c : items){
+            average += c.subTotal();
+        }
+        return average;
+    }
 }
